@@ -1,0 +1,14 @@
+{% extends 'base.html.twig' %}
+{% block body %}
+    Some Grid Demos
+
+    {% set url = 'https://jsonplaceholder.typicode.com/users' %}
+    {% set users = request_data(url) %}
+
+    {% set columns = users[0]|keys %}
+    <twig:grid :data="users" :columns="columns" useDatatables="false">
+        <twig:block name="id">
+            {{ row.id }}
+        </twig:block>
+    </twig:grid>
+{% endblock %}
