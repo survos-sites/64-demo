@@ -58,4 +58,8 @@ return [
         'version' => '1.10.18',
         'type' => 'css',
     ],
+    'bootswatch/dist/cerulean/bootstrap.min.css' => [
+        'version' => '5.3.2',
+        'type' => 'css',
+    ],
 ];
